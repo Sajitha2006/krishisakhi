@@ -37,6 +37,7 @@ const getWeather = async (latitude, longitude) => {
   throw new Error("Unable to fetch weather data");
 }
 };
+
 export const getWeatherForecast = async (latitude, longitude) => {
   try {
     const response = await axios.get(
